@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '.';
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/.);
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1682687220067-dced9a881b56?q=80&w=3775&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+section article {
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    text-align: right;
+    color: aqua;
+}
+
+section article p {
+    margin-top: 6%;
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background-color: darkslategrey;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.round {
+    border-radius: 100%;
+    border-color: orange;
+    background-color: darkslategrey;
+    color: grey;
+    padding: 5px 8px;
+}
+
+.shop {
+    background-color: darkslategrey;
+    border-style: none;
+    color: orange;
+
+}
+
+/* .orangeline {
+    border-bottom: 2px solid orange;
+} */
+
+header {
+    border-bottom: 1px solid grey;
+    margin: 2%;
+}
+header nav {
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px 4%;
+}
+
+header a {
+    margin-left: 4%;
+    padding: 5px 0px;
+}
+
+
+
+
