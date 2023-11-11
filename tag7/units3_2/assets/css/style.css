@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url('../images/paul-pastourmatzis-KT3WlrL_bsg-unsplash.jpg')center/cover no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.6rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.e404 {
+    color: aliceblue;
+    font-size: 9rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 20vh;
+}
+
+.page {
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px 3px black;
+    margin-top: 1%;
+}
+
+.fog {
+    color:aliceblue;
+    opacity: 0.5;
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px 3px black;
+    margin-top: 1%;
+}
+
+a {
+    color: aliceblue;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px 3px black;
+    margin-top: 10%;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    display: inline-block;
+}

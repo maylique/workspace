@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=neom-wbOKjgQv3nY-unsplash.jpg')center/cover no-repeat;
+height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    position: fixed;
+    top: 30vh;
+    right: 25%;
+    background-color: beige;
+    opacity: 50%;
+    width: 50vw;
+    padding: 30px 20px;
+}

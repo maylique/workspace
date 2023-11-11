@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'maven';
+}
+
+@font-face {
+    font-family: 'maven';
+    src: url(../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf);
+}
+
+header {
+    background-color: rgb(51, 51, 51);
+    height: 100vh;
+
+}
+
+.super {
+    margin-left: 1%;
+    color: grey;
+}
+
+.duper {
+    margin-left: 2%;
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.htextfresh {
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.textfresh {
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header ul {
+    position: absolute;
+    bottom: 30%;
+    right: 2%;
+}
+
+header ul li {
+    text-align: right;
+    margin-right: 2%;
+    list-style: none;
+    padding: 5% 0;
+    white-space: nowrap;
+}
+
+header div {
+    position: absolute;
+    text-align: center;
+    left: 25%;
+    top: 15%;
+    bottom: 25%;
+    right: 25%;
+    background: linear-gradient(to top right, rgb(72, 117, 146), rgb(141, 43, 134));
+    border-radius: 1rem;
+    padding: 10% 0;
+}
+header div:hover {
+    position: absolute;
+    text-align: center;
+    left: 25%;
+    top: 15%;
+    bottom: 25%;
+    right: 25%;
+    background: linear-gradient(to bottom left, rgb(72, 117, 146), rgb(141, 43, 134));
+    border-radius: 1rem;
+    padding: 10% 0;
+}
+
+a:hover {
+    text-shadow: 2px 2px 5px 5px white;
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    height: 350vh;
+    margin-top: 30vh;
+}
+
+.project {
+    position: absolute;
+    opacity: 0.07;
+    width: 60vw;
+    top: 117vh;
+    left: 5vw;
+}
+
+.stuff {
+    font-size: 2rem;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.stufftext {
+    margin-left: 5vw;
+    margin-bottom: 15vh;
+}
+
+.bild {
+    width: 60%;
+    margin: 5vw 20%;
+}
+.bild {
+    width: 60%;
+    margin: 5vw 20%;
+}
+
+.w1 {
+    margin-left: 20vw;
+}
+
+.w2 {
+    margin-left: 20vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+

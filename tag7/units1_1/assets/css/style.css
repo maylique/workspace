@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s1 {
+    height: 400px;
+    width: 400px;
+}
+
+.s2 {
+    height: 50%;
+    width: 50%;
+}
+
+.s3 {
+    height: 20em;
+    width: 20em;
+}
+.s4 {
+    height: 40rem;
+    width: 40rem;
+}
+.s5 {
+    height: 35vw;
+    width: 35vw;
+}
+.s6 {
+    height: 75vh;
+    width: 75vh;
+}
