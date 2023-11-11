@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: darkslategrey;
+    background-color: rgb(27, 29, 33);
 }
 
 a {
@@ -15,16 +15,9 @@ a {
     color: grey;
 }
 
-.round {
-    border-radius: 100%;
-    border-color: orange;
-    background-color: darkslategrey;
-    color: grey;
-    padding: 5px 8px;
-}
 
 .shop {
-    background-color: darkslategrey;
+    background-color: rgb(27, 29, 33);
     border-style: none;
     color: orange;
 
@@ -37,10 +30,11 @@ a {
 header {
     border-bottom: 1px solid grey;
     margin: 2%;
+    /* display: inline-block; */
 }
 header nav {
     text-align: right;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100vw;
 }
@@ -48,6 +42,7 @@ header nav {
 header nav ul li {
     display: inline-block;
     padding: 5px 4%;
+    white-space: nowrap;
 }
 
 header a {
@@ -55,6 +50,82 @@ header a {
     padding: 5px 0px;
 }
 
+main {
+    position: relative;
+}
 
+main h2 {
+    position: absolute;
+    top: 34vh;
+    left: 10vw;
+    right: 60%;
+    font-size: 2rem;
+    text-align: center;
+}
 
+.shop {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    /* right: 60%; */
+}
 
+.round1 {
+    position: absolute;
+    top: 88vh;
+    right: 20px;
+    border-radius: 100%;
+    border-color: orange;
+    background-color: rgb(27, 29, 33);
+    color: grey;
+    padding: 5px 8px;
+}
+
+.round2 {
+    border-radius: 100%;
+    border-color: orange;
+    background-color: rgb(27, 29, 33);
+    color: grey;
+    padding: 5px 8px;
+    position: absolute;
+    top: 88vh;
+    right: 70px;
+}
+
+main nav ul li {
+    position: absolute;
+    top: 88vh;
+    display: inline-block;
+}
+
+main nav ul li:nth-of-type(1) {
+    position: absolute;
+    left: 5%;
+}
+main nav ul li:nth-of-type(2) {
+    position: absolute;
+    left: 8%;
+}
+main nav ul li:nth-of-type(3) {
+    position: absolute;
+    left: 11%;
+}
+
+main div img:nth-child(1) {
+    position: absolute;
+    left: 50vw;
+    top: 20vh;
+    height: 400px;
+}
+main div img:nth-child(2) {
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    height: 400px;
+}
+main div img:nth-child(3) {
+    position: absolute;
+    left: 50vw;
+    top: 20vh;
+    height: 400px;
+}
