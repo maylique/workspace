@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+:root {
+    --Logocolor: #666;
+    --Logo--and--menu--color--hover: #333;
+    --menu--color--hover: #337ab7
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+header a {
+    text-decoration: none;
+    color: var(--Logocolor);
+}
+
+header a:hover {
+    text-decoration: none;
+    color: var(--Logo--and--menu--color--hover);
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: var(--menu--color--hover);
+}
+
+header {
+    display: flex;
+    height: 76px;
+    align-items: center;
+    border-bottom: 1px solid var(--Logocolor);
+    justify-content:space-around;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.logo {
+    margin-right: 10%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+main div section {
+    background: url('../images/photo-1443527216320-7e744084f5a7-1.jpg.png') center/cover no-repeat;
+    height: 100vh;
+}
+
+main div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main div section a {
+    text-decoration: none;
+    color: white;
+}
+
+main div section div {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main section div div {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button1, .button2 {
+    border: 2px solid white;
+    font-size: smaller;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.button2 {
+    background-color: plum;
+    border: none;
+}
+
+.button2:hover {
+    background-color: purple;
+    border: none;
+    transition-duration: 0.9s;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.9s;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
