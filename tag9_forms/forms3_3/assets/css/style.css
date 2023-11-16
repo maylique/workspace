@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'pop';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'pop';
+}
+
+img {
+    height: 32px;
+    width: 32px;
+    margin: 0 5px;
+}
+img:hover {
+    height: 32px;
+    width: 32px;
+    margin: 0 5px;
+    background-color: grey;
+    box-shadow: 0 0 5px 8px grey;
+    border-radius: 20px;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background: url('https://images.unsplash.com/photo-1699116548117-875b3c4fd911?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    height: 100vh;
+}
+
+section {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 20px;
+
+}
+
+.loginregisterdiv {
+    margin: 40px;
+}
+
+.login {
+    background: rgb(45, 81, 111);
+    border-bottom-left-radius:  20px;
+    border-top-left-radius: 20px;
+    padding: 15px 0;
+    padding-left: 20px;
+    padding-right: 7px;
+    color: white;
+}
+
+.register {
+    background: linear-gradient(to right,rgb(45, 81, 111), rgb(122, 156, 165)) ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 0;
+    padding-right: 20px;
+    padding-left: 7px;
+    color: white;
+}
+
+.userpassdiv {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password] {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 300px;
+    margin: 10px 0;
+    padding: 1px 0;
+}
+
+.remember {
+    margin: 20px;
+    align-self: baseline;
+}
+
+input[type=checkbox] {
+    margin-left: 25px;
+}
+
+input[type=submit] {
+    background: linear-gradient(to right,rgb(45, 81, 111), rgb(122, 156, 165)) ;
+    padding: 10px 140px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    margin: 20px;
+}
