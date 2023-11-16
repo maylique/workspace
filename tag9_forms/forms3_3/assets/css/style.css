@@ -69,32 +69,34 @@ section {
     color: white;
 }
 
+form {
+    margin: 0 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
 .userpassdiv {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     border: none;
     border-bottom: 1px solid grey;
-    width: 300px;
+    width: 350px;
     margin: 10px 0;
     padding: 1px 0;
 }
 
 .remember {
-    margin: 20px;
+    margin: 20px 0;
     align-self: baseline;
-}
-
-input[type=checkbox] {
-    margin-left: 25px;
 }
 
 input[type=submit] {
     background: linear-gradient(to right,rgb(45, 81, 111), rgb(122, 156, 165)) ;
-    padding: 10px 140px;
+    padding: 10px 130px;
     border-radius: 20px;
     color: white;
     border: none;
