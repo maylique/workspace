@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+section {
+    background-color: rgb(30, 38, 44);
+    color: white;
+    height: 26rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+input {
+    background-color: rgb(30, 38, 44);
+    padding: 4px 0;
+    min-width: 18rem;
+    margin: 1rem 0;
+}
+
+.name {
+    background-color: rgb(30, 38, 44);
+    padding: 4px 0;
+    min-width: 9rem;
+    margin: 1rem 0;
+}
+
+.h2sign {
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.forgot {
+    align-self:flex-end;
+    color: green;
+}
+
+.login {
+    color: white;
+    background-color: green;
+    padding: 1rem 7rem;
+}
+.login:hover {
+    color: white;
+    background-color: lightgreen;
+    padding: 1rem 7rem;
+}
+.signup {
+    color: white;
+    background-color: green;
+    padding: 1rem 5rem;
+    white-space: nowrap;
+}
+.signup:hover {
+    color: white;
+    background-color: lightgreen;
+    padding: 1rem 5rem;
+}
+
+.Click {
+    color: white;
+    padding: 1rem 3rem;
+}
+.Click:hover {
+    color: white;
+    padding: 1rem 3rem;
+    background-color: lightgreen;
+}
+
+.Active {
+    color: white;
+    padding: 1rem 3rem;
+    background-color: green;
+}
+
+.signuplogin {
+    margin: 1rem 0;
+}
+
+.h2login {
+    margin: 2rem;
+}
+
+.logindiv {
+    margin: 2rem 0;
+}
+
+.signuppage {
+    display: flex;
+}
+
