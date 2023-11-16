@@ -1,0 +1,49 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+input[type=sumbit], input[type=button] {
+    margin: 4px 0;
+}
+
+.labelz {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 3.5% 0;
+}
+
+input {
+    margin: 3% 0;
+}
+
+.inputz {
+    display: flex;
+}
+
+.yoyo {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+}
+
+.waseintag {
+    margin-top: 5%;
+}
+
+.leckomio {
+justify-self: flex-end;;}

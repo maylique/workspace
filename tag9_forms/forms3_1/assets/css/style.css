@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+.popup {
+    width: 50%;
+    margin: 10vh 25vw;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+
+}
+
+.signup {
+    background-color:darkcyan;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.formz {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: grey;
+    background-color: lightgray;
+    padding: 8% 4%;
+    height: 15vh;
+}
+.formz2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: grey;
+    background-color: lightgray;
+    padding: 8% 4%;
+    height: 15vh;
+}
+
+h3 {
+    margin-left: 10px;
+    color: darkcyan;
+}
+
+.eins::before {
+    content: '1';
+    position: absolute;
+    left: 24%;
+    background-color: darkcyan;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 100%;
+}
+
+.zwei::before {
+    content: '2';
+    position: absolute;
+    left: 24%;
+    background-color: darkcyan;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 100%;
+}
+
+.drei::before {
+    content: '3';
+    position: absolute;
+    left: 24%;
+    background-color: darkcyan;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 100%;
+}
+
+input[type=submit]{
+    color: white;
+    background-color: darkcyan;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px;
+    padding-bottom: 10px;
+    align-items: center;
+}

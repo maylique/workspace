@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms1_1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form action="hello">
+            <section class="name">
+                <label for="name">Name</label>
+                <div>
+                    <input class="half" type="text" name="Vorname" id="#" required placeholder="Vorname">
+                    <input class="half" type="text" required placeholder="Nachname">
+                </div>
+            </section>
+            <section class="email">
+                <label for="email">Email</label>
+                <div><input class="long" type="email" required></div>
+            </section>
+            <section class="thema">
+                <label for="them">Thema</label>
+                <div>
+                    <select class="long" name="Advertise" id="">
+                    <option value="#">Advertise</option>
+                    <option value="#">Partnership</option>
+                    <option value="#">General</option>
+                </div>
+            </select>
+            </section>
+            <section class="Nachricht">
+                <label for="">Nachricht</label>
+                <div>
+                    <textarea class="long" name="" id="" cols="30" rows="6" required placeholder="Ihr Anliegen"></textarea>
+                </div>
+            </section>
+            <section>
+                <input id="jo" class="long" type="submit" value="Submit">
+            </section>
+    </form>
+</body>
+</html>
