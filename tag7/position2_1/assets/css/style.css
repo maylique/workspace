@@ -22,38 +22,52 @@ body {
 
 section {
     background: url('../img/____.png.png') center no-repeat;
-    background-size: contain;
+    background-size: contain 100vh;
     position: absolute;
     top: 10%;
     right: 10px;
     bottom: 10px;
     left: 50%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 section article {
     position: absolute;
-    top: 40%;
-    right: 110%;
-    left: -80%;
-    bottom: 10%;
+    top: 40vh;
+    right: 50vw;
+    /* left: -40vw; */
+    bottom: 40vh;
 }
 
 h1 {
     font-family: 'play';
-    margin-bottom: 30px;
+    /* margin-bottom: 30px;
+    margin-left: 5vw; */
+    text-align: center;
+}
+
+strong {
+    font-size: 1.4em;
+    font-family: 'play';
+    font-size: ;
 }
 
 section article p {
     font-size: 0.5rem;
-    margin-bottom: 30px;
+    text-align: center;
+    /* margin-bottom: 30px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw; */
 }
 
 section article button {
     padding: 2% 9%;
-    margin-left: 10%;
     border-radius: 10px;
     font-size: 0.7rem;
     background-color: orange;
-
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    /* margin-left: 7.5vw;
+    margin-right: 2.5vw; */
 }
