@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'news';
+    src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'news';
+    background-color: rgb(230, 230, 220);
+}
+
+h1 {
+    text-align: center;
+    padding: 4px 0;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+.headerflex {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 2px 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 80vw 20vw;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 5px;
+    grid-template-areas:
+    'h2 h2 h2 h2'
+    'div div kit kit'
+    'div div kit kit'
+    'div div kit kit'
+    'div div p p';
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.headline {
+    grid-area: h2;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.kit {
+    grid-area: kit;
+}
+
+p {
+    grid-area: p;
+    color: #333;
+}
+
+aside {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+    margin: 8px;
+}
+
+aside h5 {
+    font-size: 1.3rem;
+}
+
+aside div {
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.fett {
+    font-size: 3.5rem;
+}
+
+span {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: grey;
+    margin-top: 8px;
+    line-height: 1.5px;
+}
