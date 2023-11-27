@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translate:hover {
+    transition: all 0.5s 0.1s ease-in-out;
+    transform: translate(42px, 18px);
+}
+.x:hover {
+    transition: all 0.5s 0.1s ease-in-out;
+    transform: translateX(90px);
+}
+.y:hover {
+    transition: all 0.5s 0.1s ease-in-out;
+    transform: translateY(90px);
+}
+.rotate:hover {
+    transition: all 0.5s 0.1s ease-in-out;
+    transform: rotate(30deg);
+}
+.scale:hover {
+    transition: all 0.5s 0.1s ease-in-out;
+    transform: scale(1.5);
+}
+.skew:hover {
+    transition: all 0.5s 0.1s ease-in-out;
+    transform: skew(10deg, 40deg);
+}

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    animation: loading 4s infinite ease-in-out;
+    position: absolute;
+}
+.blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 100%;
+    animation: loading 4s 1s infinite ease-in-out;
+    position: absolute;
+
+}
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 100%;
+    animation: loading 4s  2s infinite ease-in-out;
+    position: absolute;
+
+}
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 100%;
+    animation: loading 4s 3s infinite ease-in-out;
+    position: absolute;
+
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translateX(500px);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(500px, 500px);
+        background-color: yellow;
+    }
+
+    75% {
+        transform: translate(0px, 500px);
+        background-color: green;
+    }
+
+    100% {
+        transform: translate(0);
+        background-color: red;
+    }
+}
