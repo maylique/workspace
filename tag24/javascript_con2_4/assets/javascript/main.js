@@ -1,7 +1,4 @@
-function doubleParam(){
-let x = 5
-let y = 5
-
+function doubleParam(x, y){
 if(x == y){
     console.log((x+y)*5);
 }
@@ -11,4 +8,4 @@ else{
 
 }
 
-doubleParam()
+doubleParam(5, 5)
