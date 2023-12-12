@@ -80,3 +80,7 @@ const text2 = "Susi"
 const text3 = "and"
 
 document.write( '<br> <br>' + text1.replace('coding', '').concat(' ' + text3) + ' to the movie theater')
+document.write('<br><br>'+ text1.slice(0, -12).concat('the movie theater'))
+document.write('<br><br>'+ text1.replace('Sam is', 'Susi and Sam are').replace('coding', ''))
+document.write('<br><br>'+ text2.concat(' ' ,text3, ' ', text1).slice(0, 13).concat(' are going to gym and to the movie theater'))
+document.write('<br><br>'+ text2.concat(text1).replace('Sam', '').replace('coding', '').concat(' ', text3, ' to the movie theater'))
