@@ -1,0 +1,53 @@
+h1 {
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+ul li {
+    margin: 5px 10vw;
+    list-style: none;
+}
+
+h1::first-letter {
+    color: red;
+    font-size:  3em;
+}
+
+h1:hover::first-letter {
+    color: cyan;
+}
+
+ul li:nth-child(3), ul li:nth-child(4) {
+    background-color: aqua;
+}
+
+ul li:nth-child(5), ul li:nth-child(6) {
+    text-decoration: line-through;
+}
+
+ul li:nth-of-type(1)::after {
+    content: url('../pics/gym.png');
+}
+ul li:nth-of-type(2)::after {
+    content: url('../pics/bill.png');
+}
+ul li:nth-of-type(3)::after {
+    content: url('../pics/dance.png');
+}
+ul li:nth-of-type(4)::after {
+    content: url('../pics/eat.png');
+}
+ul li:nth-of-type(5)::after {
+    content: url('../pics/book.png');
+}
+ul li:nth-of-type(6)::after {
+    content: url('../pics/organize.png');
+}
+
+ul li::before {
+    content: url('../pics/no.png');
+}
+
+ul li:active::before {
+    content: url('../pics/doing.png');
+}

@@ -1,0 +1,27 @@
+* {
+    background-color: #777;
+}.container {
+    text-align: center; /* Zentriert den Inhalt horizontal */
+  }
+  
+  .inline-button {
+    display: inline-block;
+    border: none;
+    color: white;
+    background-color: rgb(20, 4, 58);
+    font-size: 3rem;
+    white-space: nowrap;
+    padding: 20px 50vh;
+    margin: 1% 20%;
+  }
+  
+  .image-container {
+    display: none;
+  }
+  
+  button:hover + .image-container {
+    display: block;
+    margin: 0 20%;
+    text-align: center; /* Zentriert das Bild horizontal */
+  }
+  
