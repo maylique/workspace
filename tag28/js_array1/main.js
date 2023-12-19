@@ -181,3 +181,4 @@ album.forEach((eintrag) => {
 })
 
 console.log(leeresArr);
+
