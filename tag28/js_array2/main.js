@@ -43,3 +43,17 @@ console.log(satz2);
 
 reverseWords(satz1)
 reverseWords(satz2)
+
+
+// 2_2
+
+let numArray2 = [36, 324, 122, 62, 98, 88, 99, 1000];
+
+const sortMe = (num) => {
+    let sort = num.sort()
+    sort.sort(function(a,b){
+        return a - b})
+        console.log(sort);
+}
+
+sortMe(numArray2)
