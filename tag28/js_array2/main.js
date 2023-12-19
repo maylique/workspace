@@ -26,9 +26,20 @@ console.log(languages);
 
 // 2_1
 
-const newLang = (word) => {
-    let rev = word.map(rever => rever.reverse())
-    console.log(rev);
+let zweiEins = ['Sergio', 'Hannah', 'Regallager', 'Reliefpfeiler' , 'Rentner']
+
+const reverseWords = (word) => {
+    let reversed = word.map((w) => w.split('').reverse().join(''))
+    console.log(reversed);
 }
 
-newLang(languages)
+reverseWords(zweiEins)
+
+let satz1 = ["Ella mag alle Bohnen"]
+console.log(satz1);
+let satz2 = ["han nesaH has ennaH"]
+console.log(satz2);
+
+
+reverseWords(satz1)
+reverseWords(satz2)
