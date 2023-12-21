@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'momo';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+/* Benutze diese Farben: #a020f0, #00bfff, #32cd32, #c71585, #00ced1, #483d8b, #2e8b57.
+Benutze diese Befehle: ::first-line, ::first-letter, ::before, ::after, ::selection. */
+
+* {
+    font-family: 'momo';
+}
+
+*::first-letter {
+    font-size: 30px;
+}
+
+ul li:nth-of-type(1)::first-letter {
+    color: aqua;
+    text-decoration: overline;
+}
+
+ul li:nth-of-type(2)::first-letter {
+    color: pink;
+    text-decoration: underline;
+}
+
+ul li:nth-of-type(3)::first-letter {
+    color: green;
+    text-decoration:line-through;
+}
+
+ul li:nth-of-type(3) {
+    text-decoration:line-through;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.small::first-letter {
+    color: red;
+}
+
+.small::first-line {
+    color: green;
+}
+
+.big {
+    font-size: 20px;
+}
+
+.big::first-line {
+    font-size: 20px;
+    color: green;
+}
+
+.big::first-letter {
+    color: red;
+}
+
+h3::first-letter {
+    color: midnightblue;
+}
+
+section p::first-letter {
+    color: red;
+}
+
+section p::first-line {
+    color: green;
+}
+
+section p:first-child {
+    text-indent: 100px;
+    color: aqua;
+    display: inline-block;
+}
+

@@ -1,0 +1,100 @@
+*::selection {
+    color: blue;
+    background-color: yellow;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+h1::first-letter {
+    font-size: 60px;
+    color: red;
+}
+
+h1::selection {}
+
+article li::after {
+    content: '🥰';
+}
+
+article li:before {
+    content: '🤣';
+}
+
+section p::first-line {
+    font-size: 40px;
+    color: red;
+
+}
+
+.p__bgPurple {
+    background-color: purple;
+}
+
+.p__fontsize {
+    font-size: 50px;
+}
+
+button {
+    width: 100px;
+    background-color: deeppink;
+    border: none;
+    color: white;
+    padding: 16px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.show_img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.show_img img {
+    display: none;
+    margin: 20px;
+
+}
+
+button:hover {
+    display: block;
+    background-color: blue;
+
+}
+
+button:hover+div img {
+    display: block;
+}
+
+.bg__img {
+    background-image: url('https://images.unsplash.com/photo-1695982206826-970fd4e8e27e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8');
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+
+}
+
+#section__one,
+#section__two,
+#section__three {
+    height: 100vh;
+}
+
+#section__one {
+    background-color: violet;
+}
+
+#section__two {
+    background-color: rgb(44, 2, 44);
+}
+
+#section__three {
+    background-color: rgb(177, 108, 177);
+}

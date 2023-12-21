@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    padding: 2% 20%;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    gap: 5%;
+    margin-top: 20%;
+    justify-content: center;
+}
+
+div {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#greenViolet {
+    background: linear-gradient(to top right, green 50%, violet 50%);
+}
+
+#greyYellow {
+    background: linear-gradient(to top right, grey 50%, yellow 50%);
+}
+
+#orangeBlack {
+    background: linear-gradient(to top right, orange 50%, black 50%);
+}
+
+#cyanBlue {
+    background: linear-gradient(to top right, cyan 50%, blue 50%);
+}

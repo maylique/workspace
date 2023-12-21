@@ -1,0 +1,20 @@
+p {
+    border: 1px solid black;
+}
+
+p::before {
+    content: 'Info';
+    background-color: yellow;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+p::after {
+    content: '\2665';
+    padding-left: 5px;
+}
+
+p::selection {
+    background-color: yellow;
+    color: purple;
+}
