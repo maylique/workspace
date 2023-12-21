@@ -6,11 +6,15 @@ cards.forEach(card => {
     card.style.backgroundColor = 'orange'
     card.style.margin = '1rem'
 
-    card.addEventListener('click', ()=>{
-        card.style.backgroundColor = 'black'
-    })
+    // card.addEventListener('click', ()=>{
+    //     card.style.backgroundColor = 'black'
+    // })
 })
 
 const changeColor = () => {
-        cards.style.backgroundColor = 'black'
+        cards.forEach(card => {
+            card.addEventListener('click', ()=>{
+                card.style.backgroundColor = 'black'
+            })
+        })
 }
