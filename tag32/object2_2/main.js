@@ -11,25 +11,35 @@ const singers = [
 
 
 
-const sortedSingers = singers.sort((a, b) => {
+const sortedSingers = () => singers.sort((a, b) => {
     const nameA = a.name.toLowerCase();
     const nameB = b.name.toLowerCase();
     if (nameA < nameB) {
-      return -1;
+    return -1;
     }
     if (nameA > nameB) {
-      return 1;
+    return 1;
     }
     return 0;
-  });
-  
-  console.log(sortedSingers);
+})
+
 
 let table = document.createElement('table')
 let thead = document.createElement('thead')
 let tbody = document.createElement('tbody')
 
-document.querySelector('#table-container').appendChild(table)
+const createStart = () => 
+{
+
+    singers.forEach(el => {
+    let start = document.createElement('tr')
+    start.innerHTML = `<th>${el.name}</th> <th>${el.country}</th> <th>${el.period_active.start}-${el.period_active.end}</th> <th>${el.genre}</th>`
+    tbody.appendChild(start)
+})
+}
+
+const newTable = () => {
+    document.querySelector('#table-container').appendChild(table)
 
 table.appendChild(thead)
 table.appendChild(tbody)
@@ -51,8 +61,80 @@ row1.appendChild(h3)
 row1.appendChild(h4)
 tbody.appendChild(row1)
 
-singers.forEach(el => {
-    let start = document.createElement('tr')
-    start.innerHTML = `<th>${el.name}</th> <th>${el.country}</th> <th>${el.period_active.start}-${el.period_active.end}</th> <th>${el.genre}</th>`
-    tbody.appendChild(start)
-})
+}
+
+const ersterStart = () => {
+    newTable()
+    createStart()
+}
+ersterStart()
+
+
+const sortName = document.querySelector('#sortName')
+const sortCountry = document.querySelector('#sortCountry')
+const sortGenre = document.querySelector('#sortGenre')
+
+const sortFunc = () => {
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
+    }
+
+    singers.sort((a, b) => {
+        const A = a.name.toLowerCase();
+        const B = b.name.toLowerCase();
+        if (A < B) {
+            return -1;
+        }
+        if (A > B) {
+            return 1;
+        }
+        return 0;
+    });
+
+    newTable();
+    createStart();
+}
+const sortFuncCountry = () => {
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
+    }
+
+    singers.sort((a, b) => {
+        const A = a.country.toLowerCase();
+        const B = b.country.toLowerCase();
+        if (A < B) {
+            return -1;
+        }
+        if (A > B) {
+            return 1;
+        }
+        return 0;
+    });
+
+    newTable();
+    createStart();
+}
+const sortFuncGenre = () => {
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
+    }
+
+    singers.sort((a, b) => {
+        const A = a.genre.toLowerCase();
+        const B = b.genre.toLowerCase();
+        if (A < B) {
+            return -1;
+        }
+        if (A > B) {
+            return 1;
+        }
+        return 0;
+    });
+
+    newTable();
+    createStart();
+}
+
+sortName.addEventListener('click', sortFunc)
+sortCountry.addEventListener('click', sortFuncCountry)
+sortGenre.addEventListener('click', sortFuncGenre)
