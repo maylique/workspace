@@ -64,7 +64,7 @@ console.log(monatsName("1410-07-15")); //Juli
 
 const weekend = (date) => {
     dateNum = new Date(date).getDay()
-    if (dateNum < 6) {
+    if (dateNum == 0 || dateNum == 6) {
         return 'Weekend'
     } else {
         return 'Schuften'

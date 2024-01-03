@@ -29,3 +29,49 @@ console.log(metallEuro);
 let metallEuroFilter = metallEuro.filter(el => el > 50)
 
 console.log(metallEuroFilter);
+
+// HTML-Tabelle erstellen
+let table = document.createElement('table');
+
+// Tabellenkopf erstellen
+let thead = document.createElement('thead');
+let headerRow = document.createElement('tr');
+let headers = ['Name', 'Preis pro Gramm (Euro)', 'Veränderung'];
+
+headers.forEach(headerText => {
+  let header = document.createElement('th');
+  header.appendChild(document.createTextNode(headerText));
+  headerRow.appendChild(header);
+});
+
+thead.appendChild(headerRow);
+table.appendChild(thead);
+
+// Tabellenkörper erstellen
+let tbody = document.createElement('tbody');
+
+edelMetallPreise.forEach(metall => {
+  let row = document.createElement('tr');
+
+  // Name
+  let nameCell = document.createElement('td');
+  nameCell.appendChild(document.createTextNode(metall.name));
+  row.appendChild(nameCell);
+
+  // Preis pro Gramm (Euro)
+  let preisCell = document.createElement('td');
+  preisCell.appendChild(document.createTextNode(metall.preiseGramEuro));
+  row.appendChild(preisCell);
+
+  // Veränderung
+  let veraenderungCell = document.createElement('td');
+  veraenderungCell.appendChild(document.createTextNode(metall.veraenderung));
+  row.appendChild(veraenderungCell);
+
+  tbody.appendChild(row);
+});
+
+table.appendChild(tbody);
+
+// Tabelle zum HTML-Dokument hinzufügen
+document.body.appendChild(table);
