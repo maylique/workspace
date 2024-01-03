@@ -64,13 +64,14 @@ console.log(monatsName("1410-07-15")); //Juli
 
 const weekend = (date) => {
     dateNum = new Date(date).getDay()
-    if (dateNum == 0 || 6) {
+    if (dateNum < 6) {
         return 'Weekend'
     } else {
         return 'Schuften'
     }
 }
-test = new Date('12.15.2019').getDay()
-console.log(test);
 
 console.log(weekend('12.15.2019'));
+console.log(weekend('2.16.2001'));
+console.log(weekend('2.1.2020'));
+console.log(weekend('2.29.2020'));
