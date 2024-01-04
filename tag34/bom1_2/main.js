@@ -5,10 +5,26 @@ const button = document.querySelector('#btn')
 let zahl = parseFloat(prozent.textContent)
 
 
-const bis0 = setInterval(() => {
+const bis0 =() => {
     zahl--
     prozent.textContent = zahl + '%'
     if (zahl == 0) {
-        clearInterval(bis0)
+        stop()
     }
-}, 30);
+}
+
+const start = () => {
+    inter = setInterval(bis0, 30)
+}
+
+const stop = () => {
+    clearInterval(inter)
+}
+
+
+const beides = () => {
+    start()
+    bis0()
+}
+
+button.addEventListener('click', beides)
